@@ -339,10 +339,10 @@ if __name__ == "__main__":
     
     # Optional: Test with fine-tuned model
     # Uncomment the following lines if you have a fine-tuned adapter
-    # print("FINE-TUNED MODEL RESPONSE:")
-    # print("-" * 100)
-    # ft_completion = generate_stream(prompt, adapter_id="wordle-dlai/2")
-    # print("-" * 100 + "\n")
+    print("FINE-TUNED MODEL RESPONSE:")
+    print("-" * 100)
+    ft_completion = generate_stream(prompt, adapter_id="wordle-dlai/2")
+    print("-" * 100 + "\n")
     
     # Example 2: Play a complete game
     print("\n" + "="*100)
