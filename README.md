@@ -67,3 +67,24 @@ print("-" * 100)
 ft_completion = generate_stream(prompt, adapter_id="wordle-dlai/2")
 print("-" * 100 + "\n")
 ```
+
+# LLM as judge
+```
+ORIGINAL TRANSCRIPT
+        ↓
+    ┌───┴────┐
+    ↓        ↓
+[Step 1]  [Step 2]
+Generate  Create Quiz
+8 Summaries  (GT questions)
+    ↓           ↓
+    └─────┬─────┘
+          ↓
+      [Step 3]
+   LLM takes quiz
+   using ONLY summary
+          ↓
+      [Step 4]
+   Score answers
+   (reward = accuracy)
+```
